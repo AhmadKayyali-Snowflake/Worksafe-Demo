@@ -34,13 +34,13 @@ This Streamlit app is meant to demonstrate the feasability of creating a lineage
 ### Step 2 - Run Project
 
 1. Run the following:
-```python
-python visulization.py
-```
-This will start the Flask app with the visualization at http://127.0.0.1:8050/
+   ```python
+   python visulization.py
+   ```
+   This will start the Flask app with the visualization at http://127.0.0.1:8050/
 2. Run the following:
-```bash
-streamlit run app.py
-```
-This will start the streamlit app which displays the visualization via iframe.
+   ```bash
+   streamlit run app.py
+   ```
+   This will start the streamlit app which displays the visualization via iframe.
 
