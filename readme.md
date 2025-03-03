@@ -38,7 +38,7 @@ This Streamlit app is meant to demonstrate the feasability of creating a lineage
    python visulization.py
    ```
    This will start the Flask app with the visualization at http://127.0.0.1:8050/
-2. Run the following:
+2. After running the command above, start the streamlit app by running the following in a new terminal:
    ```bash
    streamlit run app.py
    ```
