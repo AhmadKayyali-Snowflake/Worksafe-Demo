@@ -7,7 +7,12 @@ This Streamlit app is meant to demonstrate the feasability of creating a lineage
 
 ## Setup Instructions
 
-### Step 1 - Activate Virtual Environment & Install Dependencies
+### Step 1 - Install and Configure Snow CLI
+1. This project will read your snowflake credentials from your config.toml file that configure when setting up your Snow CLI.
+2. Please follow this documentation to get install SnowCLI: [SnowCLI Installation Guide](https://docs.snowflake.com/en/developer-guide/snowflake-cli/installation/installation)
+3. Please follow this documentation to get configure SnowCLI: [SnowCLI Configuration Guide](https://docs.snowflake.com/en/developer-guide/snowflake-cli/connecting/configure-cli)
+
+### Step 2 - Activate Virtual Environment & Install Dependencies
 
 1. This project uses python version 3.11.6
 2. Ensure you are in your project directory:
@@ -31,26 +36,14 @@ This Streamlit app is meant to demonstrate the feasability of creating a lineage
    pip install -r requirements.txt
    ```
 
-### Step 2 - Run Project
+### Step 3 - Run Project
 
-Option 1 - Rendering the visualization html in Streamlit:
-1. Run the Streamlit app by running the following in a new terminal:
-   ```bash
-   streamlit run app2.py
-   ```
-   This will start the streamlit app which displays the visualization.
-
-Option 2 - Running Flask app and embedding it into Streamlit using iframe:
-1. Run the following:
+1. Alter line 9 in session.py file at the root of the folder and add the name of your connection.
    ```python
-   python visulization.py
+   session = Session.builder.config("connection_name", "<YOUR_CONNECTION>").create()
    ```
-   This will start the Flask app with the visualization at http://127.0.0.1:8050/
-2. After running the command above, start the Streamlit app by running the following in a new terminal:
+
+2. Run the Streamlit app by running the following in a new terminal:
    ```bash
    streamlit run app.py
    ```
-   This will start the streamlit app which displays the visualization via iframe.
-
-### Recommendation
-If you are considering using dash for the visualization tool. I would recommend developing the html first, seperate to Streamlit. Then, once you are satisfied with the visualization render the visualization directly in Streamlit.
