@@ -40,7 +40,7 @@ This Streamlit app is meant to demonstrate the feasability of creating a lineage
 
 1. Alter line 9 in session.py file at the root of the folder and add the name of your connection.
    ```python
-   session = Session.builder.config("connection_name", "<YOUR_CONNECTION>").create()
+   session = Session.builder.config("connection_name", "<YOUR_CONNECTION_NAME>").create()
    ```
 
 2. Run the Streamlit app by running the following in a new terminal:
