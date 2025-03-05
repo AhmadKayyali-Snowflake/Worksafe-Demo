@@ -10,7 +10,7 @@ This Streamlit app is meant to demonstrate the feasability of creating a lineage
 ### Step 1 - Install and Configure Snow CLI
 1. This project will read your snowflake credentials from your config.toml file that configure when setting up your Snow CLI.
 2. Please follow this documentation to get install SnowCLI: [SnowCLI Installation Guide](https://docs.snowflake.com/en/developer-guide/snowflake-cli/installation/installation)
-3. Please follow this documentation to get configure SnowCLI: [SnowCLI Configuration Guide](https://docs.snowflake.com/en/developer-guide/snowflake-cli/connecting/configure-cli)
+3. Please follow this documentation to add a snowflake connection: [SnowCLI Configuration Guide](https://docs.snowflake.com/en/developer-guide/snowflake-cli/connecting/configure-connections#add-a-connection)
 
 ### Step 2 - Activate Virtual Environment & Install Dependencies
 
